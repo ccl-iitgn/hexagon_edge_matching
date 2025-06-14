@@ -34,13 +34,13 @@ export default function App() {
       const root = createRoot(container)
       root.render(hexComponent)
 
-      await new Promise(resolve => setTimeout(resolve, 500)) 
+      await new Promise(resolve => setTimeout(resolve, 500))
 
       const canvas = await html2canvas(wrapper, {
         scale: 1.2,
         useCORS: true,
       })
-      const imgData = canvas.toDataURL("image/jpeg", 0.6) 
+      const imgData = canvas.toDataURL("image/jpeg", 0.6)
 
       const ratio = Math.min(pageWidth / canvas.width, pageHeight / canvas.height)
       const imgWidth = canvas.width * ratio

@@ -25,7 +25,9 @@ const TriangleImage = ({ imageSources }) => {
       { from: B, to: C, angle: 0 },
       { from: C, to: A, angle: 240 },
     ];
-
+    if (!imageSources) {
+      imageSources = [3, 3, 3]
+    }
     const orderedImageSources = [imageSources[1], imageSources[0], imageSources[2]];
 
     const loadedImages = new Array(3).fill(null);

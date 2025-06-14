@@ -3,6 +3,9 @@ import "./Hexagon.css"
 import { useEffect, useState } from "react"
 export default function Hexagon({ data }) {
     const [linedata, setLineData] = useState(['0,1', '2,3', '4,5', '6,7'])
+    if(!data){
+        return <div></div>
+    }
     return (
         <div className="hexagon-main-container">
             {data.map((row, inx) => {
