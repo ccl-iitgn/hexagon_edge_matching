@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    min-width: 1200px;
+}
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 80px;
+}
+.hexagon-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button{
+    min-width: 400px;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 20px 100px;
+    border-radius: 40px;
+}

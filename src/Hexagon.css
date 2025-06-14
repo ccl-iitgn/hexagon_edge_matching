@@ -1,0 +1,9 @@
+.hexagon-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hexagon-row-container{
+    display: flex;
+}
