@@ -1,12 +1,32 @@
-# React + Vite
+# 🧩 Hexagon Edge Matching Puzzle Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project generates **9 unique hexagon edge-matching puzzles** using the **same set of tiles** and displays them on a webpage. The generated puzzles are not meant to be played interactively on the site — instead, users can **view and download** the puzzle boards for offline solving, printing, or use in puzzle books.
 
-Currently, two official plugins are available:
+Each puzzle challenges the solver to place hexagonal tiles such that **all touching edges match** in color or value.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔧 Project Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔁 Reuse a fixed tile set to generate multiple distinct puzzle configurations
+- 🔄 Automatically rotate and arrange tiles based on edge-matching rules
+- 🧠 Apply symmetry reduction to avoid trivial duplicates
+- 🖼️ Display all 9 puzzles visually on a single web page
+- 📥 Allow users to download the puzzles for printing or sharing
+
+---
+
+## 🧪 How to Run
+
+```bash
+# Clone the repository
+git clone https://github.com/ccl-iitgn/hexagon_edge_matching.git
+cd hexagon_edge_matching
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# → App runs at http://localhost:5173/
